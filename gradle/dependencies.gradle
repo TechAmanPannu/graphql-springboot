@@ -15,7 +15,8 @@ ext {
             restEasy                     : '4.7.0.Final',
             apacheLang                   : '3.4',
             netflixHystrix               : '2.2.7.RELEASE',
-            springLog4jApi               : '2.16.0'
+            springLog4jApi               : '2.16.0',
+            graphQL                      : '11.0.0'
 
     ]
 
@@ -37,6 +38,8 @@ ext {
             gcpLoggingSleuth    : "org.springframework.cloud:spring-cloud-starter-sleuth:${libsVersion.gcpLoggingSleuth}",
             gcpLoggingWebFlux   : "org.springframework.boot:spring-boot-starter-webflux:${libsVersion.gcpLoggingWebFlux}",
             gcloudLibs          : "com.google.cloud:libraries-bom:${libsVersion.gcloudLibs}",
+            graphQL             : "com.graphql-java-kickstart:graphql-spring-boot-starter:${libsVersion.graphQL}",
+            graphQLPlayground  :  "com.graphql-java-kickstart:playground-spring-boot-starter:${libsVersion.graphQL}",
 
 
             /// testing
