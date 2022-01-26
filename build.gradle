@@ -39,6 +39,7 @@ dependencies {
 
 
     compile libs.spring
+    compile libs.restEasy
     compileOnly libs.lombok
     annotationProcessor libs.lombok
 

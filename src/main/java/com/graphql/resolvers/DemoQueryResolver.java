@@ -13,5 +13,5 @@ public class DemoQueryResolver implements GraphQLQueryResolver {
         this.demoDao = demoDao;
     }
 
-    String doSomething() { return demoDao.doSomething(); }
+        String doSomething() { return demoDao.doSomething(); }
 }

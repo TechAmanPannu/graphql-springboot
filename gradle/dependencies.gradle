@@ -3,6 +3,7 @@ ext {
 
             lombok                       : '1.18.12',
             JUnit                        : '4.13',
+            restEasy                     : '4.7.0.Final'
 
     ]
 
@@ -12,6 +13,7 @@ ext {
             spring              : ["org.springframework.boot:spring-boot-starter-data-rest",
                                    "org.springframework.boot:spring-boot-starter-data-redis",
                                    "org.springframework.boot:spring-boot-starter-web"],
+            restEasy            : "org.jboss.resteasy:resteasy-spring-boot-starter:${libsVersion.restEasy}",
 
 
             /// testing
