@@ -1,0 +1,22 @@
+ext {
+    libsVersion = [
+
+
+            lombok                       : '1.18.12',
+            JUnit                        : '4.13',
+    ]
+
+    libs = [
+
+            lombok              : "org.projectlombok:lombok:${libsVersion.lombok}",
+            spring              : ["org.springframework.boot:spring-boot-starter-data-rest",
+                                    "org.springframework.boot:spring-boot-starter-web"],
+
+            /// testing
+            JUnit               : ["junit:junit:${libsVersion.JUnit}",
+                                 "org.springframework.boot:spring-boot-starter-test"],
+
+    ]
+
+
+}
