@@ -32,10 +32,6 @@ ext['log4j2.version'] = libs.springLog4jApi
 
 dependencies {
 
-    implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:11.0.0'
-
-    // to embed Altair tool for schema introspection and query debugging
-    runtimeOnly 'com.graphql-java-kickstart:playground-spring-boot-starter:11.0.0'
 
 
     compile libs.spring
@@ -43,6 +39,8 @@ dependencies {
     compileOnly libs.lombok
     annotationProcessor libs.lombok
 
+    implementation libs.graphQL
+    runtimeOnly libs.graphQLPlayground
 
     // test
     testCompile libs.JUnit
