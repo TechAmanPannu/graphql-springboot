@@ -1,4 +1,4 @@
-/*
+
 package com.graphql;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
@@ -42,7 +42,7 @@ public class RedisConfig {
     @Bean
     public RedisTemplate<String, String> redisTemplate() {
         objectMapper.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
-        objectMapper.activateDefaultTyping(BasicPolymorphicTypeValidator.builder().build(), ObjectMapper.DefaultTyping.NON_FINAL);
+//        objectMapper.activateDefaultTyping(BasicPolymorphicTypeValidator.builder().build(), ObjectMapper.DefaultTyping.NON_FINAL);
         // redis serialize
         Jackson2JsonRedisSerializer<Object> jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer<>(Object.class);
         jackson2JsonRedisSerializer.setObjectMapper(objectMapper);
@@ -57,4 +57,4 @@ public class RedisConfig {
 
 
 }
-*/
+
