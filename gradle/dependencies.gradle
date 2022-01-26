@@ -2,18 +2,41 @@ ext {
     libsVersion = [
 
             lombok                       : '1.18.12',
+            morphia                      : '2.1.4',
             JUnit                        : '4.13',
-            restEasy                     : '4.7.0.Final'
+            mongoEmbed                   :  '2.2.0',
+            jsoup                        : '1.13.1',
+            sendgrid                     : '4.1.2',
+            pubsub                       : '19.0.0',
+            gcpLoggingStarter            : '1.2.6.RELEASE',
+            gcpLoggingSleuth             : '2.2.6.RELEASE',
+            gcpLoggingWebFlux            : '2.4.0',
+            gcloudLibs                   : '19.0.0',
+            restEasy                     : '4.7.0.Final',
+            apacheLang                   : '3.4',
+            netflixHystrix               : '2.2.7.RELEASE',
+            springLog4jApi               : '2.16.0'
 
     ]
 
     libs = [
 
             lombok              : "org.projectlombok:lombok:${libsVersion.lombok}",
+            morphia             : "dev.morphia.morphia:morphia-core:${libsVersion.morphia}",
+            jsoup               :    "org.jsoup:jsoup:${libsVersion.jsoup}",
+            sendgrid            : "com.sendgrid:sendgrid-java:${libsVersion.sendgrid}",
+            pubsub              : "com.google.cloud:google-cloud-pubsub",
+            netflixHystrix      : "org.springframework.cloud:spring-cloud-starter-netflix-hystrix:${libsVersion.netflixHystrix}",
+
             spring              : ["org.springframework.boot:spring-boot-starter-data-rest",
                                    "org.springframework.boot:spring-boot-starter-data-redis",
                                    "org.springframework.boot:spring-boot-starter-web"],
             restEasy            : "org.jboss.resteasy:resteasy-spring-boot-starter:${libsVersion.restEasy}",
+            apacheLang        : "org.apache.commons:commons-lang3:${libsVersion.apacheLang}",
+            gcpLoggingStarter   : "org.springframework.cloud:spring-cloud-gcp-starter-logging:${libsVersion.gcpLoggingStarter}",
+            gcpLoggingSleuth    : "org.springframework.cloud:spring-cloud-starter-sleuth:${libsVersion.gcpLoggingSleuth}",
+            gcpLoggingWebFlux   : "org.springframework.boot:spring-boot-starter-webflux:${libsVersion.gcpLoggingWebFlux}",
+            gcloudLibs          : "com.google.cloud:libraries-bom:${libsVersion.gcloudLibs}",
 
 
             /// testing
