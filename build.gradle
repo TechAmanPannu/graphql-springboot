@@ -38,6 +38,19 @@ dependencies {
     runtimeOnly 'com.graphql-java-kickstart:playground-spring-boot-starter:11.0.0'
 
 
+   compile libs.morphia
+    compile libs.sendgrid
+    compile libs.jsoup
+    compile libs.pubsub
+    implementation platform(libs.gcloudLibs)
+    compile libs.netflixHystrix
+    compile libs.apacheLang
+
+    compile libs.gcpLoggingStarter
+    compile libs.gcpLoggingSleuth
+    compile libs.gcpLoggingWebFlux
+
+
     compile libs.spring
     compile libs.restEasy
     compileOnly libs.lombok
