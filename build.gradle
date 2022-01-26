@@ -1,7 +1,7 @@
 /** dependencies version and config definitions **/
 apply from: './gradle/dependencies.gradle'
 
-group 'com.graphql'
+group 'com.shotly'
 version '1.0'
 buildscript {
 
@@ -37,13 +37,10 @@ dependencies {
     // to embed Altair tool for schema introspection and query debugging
     runtimeOnly 'com.graphql-java-kickstart:playground-spring-boot-starter:11.0.0'
 
+
     compile libs.spring
-
-
     compileOnly libs.lombok
     annotationProcessor libs.lombok
-
-    //compileOnly libs.mongoEmbed
 
 
     // test
