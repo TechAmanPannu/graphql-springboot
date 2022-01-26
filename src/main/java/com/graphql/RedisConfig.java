@@ -31,12 +31,10 @@ public class RedisConfig {
     @Bean
     public LettuceConnectionFactory redisConnectionFactory() {
         log.info("Connecting to redis host...");
-        LettuceClientConfiguration clientConfig = LettuceClientConfiguration.builder()
-                .readFrom(ReadFrom.REPLICA_PREFERRED)
-                .build();
-        RedisStaticMasterReplicaConfiguration staticMasterReplicaConfiguration = new RedisStaticMasterReplicaConfiguration(AppConstants.REDIS_HOST, AppConstants.REDIS_PORT);
-        staticMasterReplicaConfiguration.setPassword(AppConstants.REDIS_PASSWORD);
-        return new LettuceConnectionFactory(staticMasterReplicaConfiguration, clientConfig);
+        RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
+        redisStandaloneConfiguration.setHostName(AppConstants.REDIS_HOST);
+        redisStandaloneConfiguration.setPort(AppConstants.REDIS_PORT);
+        return new LettuceConnectionFactory(redisStandaloneConfiguration);
     }
 
     @Bean
