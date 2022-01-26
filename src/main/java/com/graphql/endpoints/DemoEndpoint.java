@@ -21,7 +21,14 @@ public class DemoEndpoint {
 
 
     @GET
-    public Response getMetrics()  {
+    @Path("/do-something")
+    public Response doSomething()  {
        return Response.ok(demoDao.doSomething()).build();
+    }
+
+    @GET
+    @Path("/do-nothing")
+    public Response doNothing()  {
+        return Response.ok(demoDao.doNothing()).build();
     }
 }

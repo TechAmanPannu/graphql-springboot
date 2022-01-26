@@ -12,4 +12,9 @@ public class DemoDaoImpl implements DemoDao {
     public String doSomething() {
         return "something returned";
     }
+
+    @Override
+    public String doNothing() {
+        return "nothing returned";
+    }
 }
