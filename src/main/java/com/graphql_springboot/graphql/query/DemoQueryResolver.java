@@ -1,7 +1,6 @@
-package com.graphql.resolvers;
+package com.graphql_springboot.graphql.query;
 
-import com.graphql.dao.DemoDao;
-import com.graphql.impl.DemoDaoImpl;
+import com.graphql_springboot.dao.DemoDao;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;
 

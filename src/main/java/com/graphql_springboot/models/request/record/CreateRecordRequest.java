@@ -1,4 +1,4 @@
-package com.graphql.models.request.record;
+package com.graphql_springboot.models.request.record;
 
 import lombok.Data;
 

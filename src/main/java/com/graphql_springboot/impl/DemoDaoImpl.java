@@ -1,6 +1,6 @@
-package com.graphql.impl;
+package com.graphql_springboot.impl;
 
-import com.graphql.dao.DemoDao;
+import com.graphql_springboot.dao.DemoDao;
 import org.springframework.stereotype.Service;
 
 

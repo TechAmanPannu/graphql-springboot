@@ -1,7 +1,7 @@
-package com.graphql.dao;
+package com.graphql_springboot.dao;
 
-import com.graphql.entities.Record;
-import com.graphql.models.request.record.CreateRecordRequest;
+import com.graphql_springboot.entities.Record;
+import com.graphql_springboot.models.request.record.CreateRecordRequest;
 import org.springframework.stereotype.Component;
 
 @Component

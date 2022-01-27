@@ -1,7 +1,7 @@
-package com.graphql.controllers;
+package com.graphql_springboot.controllers;
 
 
-import com.graphql.dao.DemoDao;
+import com.graphql_springboot.dao.DemoDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
