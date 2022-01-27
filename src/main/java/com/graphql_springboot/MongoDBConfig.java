@@ -1,7 +1,6 @@
-package com.graphql;
+package com.graphql_springboot;
 
-import com.graphql.constants.AppConstants;
-import com.graphql.entities.Demo;
+import com.graphql_springboot.constants.AppConstants;
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
 import com.mongodb.ReadPreference;

@@ -1,4 +1,4 @@
-package com.graphql;
+package com.graphql_springboot;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

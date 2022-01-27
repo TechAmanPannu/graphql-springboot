@@ -1,4 +1,4 @@
-package com.graphql.entities;
+package com.graphql_springboot.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
