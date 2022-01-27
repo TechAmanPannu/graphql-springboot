@@ -1,4 +1,4 @@
-package com.graphql.dao;
+package com.graphql_springboot.dao;
 
 
 import org.springframework.stereotype.Service;

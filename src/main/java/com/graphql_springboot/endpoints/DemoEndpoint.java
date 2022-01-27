@@ -1,11 +1,9 @@
-package com.graphql.endpoints;
+package com.graphql_springboot.endpoints;
 
-import com.graphql.dao.DemoDao;
+import com.graphql_springboot.dao.DemoDao;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

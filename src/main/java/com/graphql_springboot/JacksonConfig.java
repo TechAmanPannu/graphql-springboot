@@ -1,4 +1,4 @@
-package com.graphql;
+package com.graphql_springboot;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;

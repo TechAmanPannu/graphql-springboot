@@ -1,7 +1,6 @@
-package com.graphql;
+package com.graphql_springboot;
 
 
-import com.graphql.endpoints.DemoEndpoint;
 import org.springframework.stereotype.Component;
 
 import javax.ws.rs.ApplicationPath;
