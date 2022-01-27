@@ -15,5 +15,4 @@ public class Application extends SpringBootServletInitializer {
         new Application().configure(new SpringApplicationBuilder(Application.class)).run(args);
     }
 
-
 }
