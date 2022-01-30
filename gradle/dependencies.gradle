@@ -1,6 +1,6 @@
 ext {
     libsVersion = [
-
+            javaCoreUtil                 : '1.0',
             lombok                       : '1.18.12',
             JUnit                        : '4.13',
             graphQL                      :  '11.0.0'
@@ -9,6 +9,7 @@ ext {
 
     libs = [
 
+            javaCoreUtil        : files("$projectDir/libs/java-core-util-${libsVersion.javaCoreUtil}.jar"),
             lombok              : "org.projectlombok:lombok:${libsVersion.lombok}",
             spring              : ["org.springframework.boot:spring-boot-starter-data-rest",
                                    "org.springframework.boot:spring-boot-starter-data-redis",

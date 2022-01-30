@@ -33,7 +33,7 @@ ext['log4j2.version'] = libs.springLog4jApi
 dependencies {
 
 
-
+    compile libs.javaCoreUtil
     compile libs.spring
     compileOnly libs.lombok
     annotationProcessor libs.lombok
