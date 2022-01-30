@@ -1,4 +1,4 @@
-package com.graphql_springboot.controllers;
+package com.graphql_springboot.endpoints;
 
 
 import com.graphql_springboot.dao.DemoDao;
